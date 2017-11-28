@@ -1,5 +1,7 @@
 @extends('main')
 
+@section('title', '| Homepage')
+
 @section('content')
 
     <div class="row">
@@ -53,5 +55,11 @@
             <h2>Sidebar</h2>
         </div>
     </div>
+
+@endsection
+
+@section('scripts')
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
 @endsection
