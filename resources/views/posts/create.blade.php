@@ -17,10 +17,10 @@
             
             {!! Form::open(['route' => 'posts.store', 'data-parsley-validate' => '']) !!}
                 {{ Form::label('title', 'Title') }}
-                {{ Form::text('title', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '255')) }}
+                {{ Form::text('title', null, array('class' => 'form-control')) }}
 
                 {{ Form::label('body', "Body") }}
-                {{ Form::textarea('body', null, array('class' => 'form-control', 'required' => '')) }}
+                {{ Form::textarea('body', null, array('class' => 'form-control')) }}
 
                 {{ Form::submit('Create Post', array('class' => 'btn btn-primary btn-lg btn-block', 'style' => 'margin-top: 20px'))}}
 

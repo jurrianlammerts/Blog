@@ -2,6 +2,7 @@
 
 @section('title', '| Contact')
 
+@section('ActiveContact','active') 
 
 @section('content')
 

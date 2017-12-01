@@ -2,6 +2,8 @@
 
 @section('title', '| Homepage')
 
+@section('ActiveHome','active') 
+
 @section('content')
 
     <div class="row">
@@ -59,7 +61,5 @@
 @endsection
 
 @section('scripts')
-
-    <link rel="stylesheet" type="text/css" href="styles.css">
 
 @endsection

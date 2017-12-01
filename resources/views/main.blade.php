@@ -16,7 +16,7 @@
 
             @include('partials.footer')
 
-        </div><!-- End of .container -->    
+        </div>   
 
         @include('partials.javascript')
 

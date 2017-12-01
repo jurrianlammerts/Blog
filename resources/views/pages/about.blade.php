@@ -2,6 +2,7 @@
 
 @section('title', '| About')
 
+@section('ActiveAbout','active') 
 
 @section('content')
 
