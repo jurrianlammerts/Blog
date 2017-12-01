@@ -1,14 +1,17 @@
 @extends('main')
 
-@section('title', ' View Post')
+@section('title', ' Edit Post')
 
 @section('content')
 
 <div class="row">
+    {!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'PUT']) !!}
     <div class="col-md-8">
-        <h1>{{ $post->title }}</h1>
+        {{ Form::label('Title', "Title") }}
+        {{ Form::text('title', null, ["class" => 'form-control input-lg' ]) }}
 
-        <p class="lead">{{ $post->body }}</p>
+        {{ Form::label('Body', "Body") }}
+        {{ Form::textarea('body', null, ["class" => 'form-control' ]) }}
     </div>
    
     <div class="col-md-4">
@@ -26,10 +29,10 @@
 
             <div class="row">
                 <div class="col-sm-6">
-                    {!! Html::linkRoute('posts.edit', 'Edit', array($post->id), array('class' => 'btn btn-primary btn-block')) !!}
+                    {!! Html::linkRoute('posts.show', 'Cancel', array($post->id), array('class' => 'btn btn-danger btn-block')) !!}
                 </div>
                 <div class="col-sm-6">
-                    {!! Html::linkRoute('posts.destroy', 'Delete', array($post->id),  array('class' => 'btn btn-danger btn-block')) !!}
+                    {{ Form::submit('Save', ['class' => 'btn btn-success btn-block']) }}
                 </div>
             </div>
 
@@ -37,7 +40,7 @@
 
     </div>
 
-
-</div>
+    {!! Form::close() !!}
+</div><!-- end of .row (form)-->
 
 @endsection

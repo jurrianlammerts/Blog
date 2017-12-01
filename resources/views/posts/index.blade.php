@@ -1,6 +1,6 @@
 @extends('main')
 
-@section('title', '| All Posts')
+@section('title', ' All Posts')
 
 @section('ActivePosts','active') 
 
@@ -26,8 +26,9 @@
                     <th scope="col"><i class="fa fa-id-badge" aria-hidden="true"></i></th>
                     <th scope="col">Title</th>
                     <th scope="col">Body</th>
-                    <th scope="col"><i class="fa fa-calendar" aria-hidden="true"></i> Published At</th>
+                    <th scope="col"><i class="fa fa-calendar" aria-hidden="true"></i> Published</th>
                     <th scope="col"></th>
+                    <th></th>
                     </tr>
                 </thead>
                 
@@ -40,7 +41,8 @@
                         <td>{{ $post->title }}</td>
                         <td>{{ substr($post->body, 0, 50) }} {{ strlen($post->body) > 50 ? " ..." : "" }}</td>
                         <td>{{ date('j/m/Y, H:i', strtotime($post->created_at)) }}</td>
-                        <td><a href="{{ route('posts.show', $post->id) }}" class="btn btn-default btn-sm">View</a><a href="{{ route('posts.edit', $post->id) }}" class="btn btn-default btn-sm">Edit</a></td>
+                        <td><a href="{{ route('posts.show', $post->id) }}" class="btn btn-default btn-sm">View</a></td>
+                        <td><a href="{{ route('posts.edit', $post->id) }}" class="btn btn-default btn-sm">Edit</a></td>
                     </tr>
 
                     @endforeach

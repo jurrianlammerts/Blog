@@ -5,7 +5,7 @@
 <title>@yield('title')</title>
 
 <!-- Icon tab -->
-<link rel="icon" href="paper_plane.ico">
+<link rel="icon" href="/paper_plane.ico">
 <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 
 <!-- Bootstrap -->

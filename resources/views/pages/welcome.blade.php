@@ -1,6 +1,6 @@
 @extends('main')
 
-@section('title', '| Homepage')
+@section('title', ' Homepage')
 
 @section('ActiveHome','active') 
 

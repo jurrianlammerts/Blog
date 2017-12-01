@@ -1,6 +1,6 @@
 @extends('main')
 
-@section('title', '| Create New Post')
+@section('title', ' Create New Post')
 
 @section('stylesheets')
 
