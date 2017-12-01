@@ -52,5 +52,8 @@
         </div>
     </div>
 
+@endsection
+
+@section('partials.javascript')
 
 @endsection
