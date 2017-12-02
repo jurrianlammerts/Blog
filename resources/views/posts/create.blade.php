@@ -17,12 +17,19 @@
             
             {!! Form::open(['route' => 'posts.store', 'data-parsley-validate' => '']) !!}
                 {{ Form::label('title', 'Title') }}
-                {{ Form::text('title', null, array('class' => 'form-control')) }}
+                {{ Form::text('title', null, array('class' => 'form-control', 'required' => '', 
+                'maxlength' => '255', 'data-parsley-errors-messages-disabled')) }}
+
+                {{ Form::label('slug', 'Slug') }}
+                {{ Form::text('slug', null, array('class' => 'form-control', 'required' => '', 
+                'minlength' => '5', 'maxlength' => '255', 'data-parsley-errors-messages-disabled')) }}
 
                 {{ Form::label('body', "Body") }}
-                {{ Form::textarea('body', null, array('class' => 'form-control')) }}
+                {{ Form::textarea('body', null, array('class' => 'form-control',  
+                'required' => '', 'data-parsley-errors-messages-disabled')) }}
 
-                {{ Form::submit('Create Post', array('class' => 'btn btn-primary btn-lg btn-block', 'style' => 'margin-top: 20px'))}}
+                {{ Form::submit('Create Post', array('class' => 'btn btn-primary btn-lg btn-block', 
+                'style' => 'margin-top: 20px'))}}
 
             {!! Form::close() !!}
 

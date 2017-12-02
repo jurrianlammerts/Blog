@@ -10,6 +10,9 @@
         {{ Form::label('Title', "Title") }}
         {{ Form::text('title', null, ["class" => 'form-control input-lg' ]) }}
 
+        {{ Form::label('slug', "Slug") }}
+        {{ Form::text('slug', null, ["class" => 'form-control ' ]) }}
+
         {{ Form::label('Body', "Body") }}
         {{ Form::textarea('body', null, ["class" => 'form-control' ]) }}
     </div>
