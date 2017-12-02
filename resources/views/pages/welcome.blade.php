@@ -18,39 +18,19 @@
 
     <div class="row">
         <div class="col-md-8">
+
+        @foreach($posts as $post)
             <div class"post">
-                <h3>Post title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus dolore molestiae eum quibusdam! 
-                Voluptas corrupti maxime rerum sapiente odio, assumenda dignissimos iure vero libero non dolore modi sed eaque!</p>
-                <a href="#" class="btn btn-primary">Read more</a>
+                <h3>{{ $post->title }}</h3>
+                <p>{{ substr($post->body, 0, 300) }} {{ strlen($post->body) > 300 ? "..." : "" }}</p>
+                <a href="" class="btn btn-primary">Read more</a>
+
             </div>
 
             <hr>
+            
+        @endforeach
 
-            <div class"post">
-                <h3>Post title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus dolore molestiae eum quibusdam! 
-                Voluptas corrupti maxime rerum sapiente odio, assumenda dignissimos iure vero libero non dolore modi sed eaque!</p>
-                <a href="#" class="btn btn-primary">Read more</a>
-            </div>
-
-            <hr>
-
-            <div class"post">
-                <h3>Post title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus dolore molestiae eum quibusdam! 
-                Voluptas corrupti maxime rerum sapiente odio, assumenda dignissimos iure vero libero non dolore modi sed eaque!</p>
-                <a href="#" class="btn btn-primary">Read more</a>
-            </div>
-
-            <hr>
-
-            <div class"post">
-                <h3>Post title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus dolore molestiae eum quibusdam! 
-                Voluptas corrupti maxime rerum sapiente odio, assumenda dignissimos iure vero libero non dolore modi sed eaque!</p>
-                <a href="#" class="btn btn-primary">Read more</a>
-            </div>
         </div>
 
         <div class="col-md-3 col-md-offset-1">

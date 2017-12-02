@@ -26,7 +26,7 @@
                     <th scope="col"><i class="fa fa-id-badge" aria-hidden="true"></i></th>
                     <th scope="col">Title</th>
                     <th scope="col">Body</th>
-                    <th scope="col">Published</th>
+                    <th scope="col">Created At</th>
                     <th scope="col"></th>
                     <th></th>
                     </tr>
@@ -53,7 +53,7 @@
             <div class="text-center">
                 {!! $posts->links(); !!}
             </div>
-            
+
         </div>
     </div>
 
