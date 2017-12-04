@@ -2,8 +2,6 @@
 
 @section('title', ' All Posts')
 
-@section('ActivePosts','active') 
-
 @section('content')
 
     <div class="row">

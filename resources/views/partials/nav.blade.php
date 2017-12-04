@@ -16,19 +16,19 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li class="@yield('ActiveHome')"><a href="/">Home</a></li>
+            <li class="@yield('ActiveBlog')"><a href="/blog">Blog</a></li>
             <li class="@yield('ActiveAbout')"><a href="/about">About</a></li>
             <li class="@yield('ActiveContact')"><a href="/contact">Contact</a></li>
-            <li class="@yield('ActivePosts')"><a href="/posts">Posts</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
             <ul class="dropdown-menu">
                 <li><a href="#">My account</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="/posts">Posts</a></li>
                 <li><a href="#">Something else here</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Log out</a></li>
+                <li><a href="#">Logout</a></li>
             </ul>
             </li>
         </ul>
