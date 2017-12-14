@@ -14,18 +14,6 @@
 Auth::routes();
 
 Route::group(['middleware' => ['web']], function () {
-    // Authentication
-
-    // Route::get('/admin', 'AdminController@index');
-
-    // Route::get('auth/login', 'AuthController@getLogin');
-    // Route::post('auth/login', 'AuthController@postLogin');
-    // Route::get('auth/logout', 'AuthController@getLogout');
-
-    // // Registration 
-    // Route::get('auth/register', 'AuthController@getRegister');
-    // Route::post('auth/register', 'AuthController@postRegister');
-
     // Blog
     Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])
         // Regular expressions: any character (\w), number character(\d), '-' & '_'

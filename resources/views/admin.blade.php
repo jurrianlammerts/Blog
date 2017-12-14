@@ -1,5 +1,7 @@
 @extends('main')
 
+@section('title', ' Admin Dashboard')
+
 @section('content')
 <div class="container">
     <div class="row">
