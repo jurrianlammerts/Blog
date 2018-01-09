@@ -1,4 +1,10 @@
-@extends('main') @section('title', ' Homepage') @section('ActiveHome','active') @section('content')
+@extends('main') 
+
+@section('title', ' Homepage') 
+
+@section('ActiveHome','active') 
+
+@section('content')
 
 <div class="row">
 	<div class="col-md-12">

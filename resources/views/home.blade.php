@@ -16,7 +16,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in! <a href="{{ url('posts') }}">Click to continue to Dashboard</a>
                 </div>
             </div>
         </div>

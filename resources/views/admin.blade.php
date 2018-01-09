@@ -16,7 +16,7 @@
                         </div>
                     @endif
 
-                    You are logged in as <strong>Admin! </strong><a href="{{ url('users') }}">Click here to continue</a>
+                    You are logged in as <strong>Admin! </strong><a href="{{ url('users') }}">Click to continue to Dashboard</a>
 
                 </div>
             </div>
