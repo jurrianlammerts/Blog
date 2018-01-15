@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Post;
+use Auth;
 use Session;
 
 class PostController extends Controller
@@ -14,9 +15,17 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+
+    public function __construct()
     {
-        $posts = Post::orderBy('created_at', 'desc')->paginate(5);
+        $this->middleware('auth');
+    } 
+
+    public function index(Request $request)
+    {
+        $user_id = Auth::id();
+        
+        $posts = Post::where('user_id', '=', $user_id)->orderBy('created_at', 'desc')->paginate(5);
 
         return view('posts.index')->with('posts', $posts);
     }
@@ -47,11 +56,15 @@ class PostController extends Controller
             ));
 
         // Store in database
+
         $post = new Post;
+
+        $id = Auth::id();
 
         $post->title = $request->title;
         $post->slug = $request->slug;
         $post->body = $request->body;
+        $post->user_id = $id;
 
         $post->save();
 

@@ -16,8 +16,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li class="@yield('ActiveHome')"><a href="/">Home</a></li>
-            <li class="@yield('ActiveBlog')"><a href="/blog">Blog</a></li>
-            <li class="@yield('ActiveAbout')"><a href="/about">About</a></li>
+            <li class="@yield('ActivePosts')"><a href="/posts">Blog</a></li>
             <li class="@yield('ActiveContact')"><a href="/contact">Contact</a></li>
         </ul>
         <!-- Right Side Of Navbar -->

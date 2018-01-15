@@ -46,9 +46,13 @@
 	</div>
 
 	<div class="col-md-3 col-md-offset-1">
-		<h2>About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h2>About us</h2>
+		<p>The <i class="fa fa-paper-plane" aria-hidden="true"></i> Blog delivers a daily mix of advice and inspiration for digital and traditional artists, web designers, graphic designers, illustrators, and more. We bring the very best creative work to our audience and offer the insight that enables them to keep up to date with the latest trends and developments in the Tech industry.</p>
 	</div>
 </div>
 
-@endsection @section('scripts') @endsection
+@endsection 
+
+@section('scripts') 
+
+@endsection
