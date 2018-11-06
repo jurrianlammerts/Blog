@@ -20,8 +20,6 @@ Route::group(['middleware' => ['web']], function () {
         ->where('slug', '[\w\d\-\_]+');
 
     Route::get('blog', ['uses' => 'BlogController@getIndex', 'as' => 'blog.index']);
-
-    Route::get('logout', 'Auth\LoginController@logout');
     
     // Pages
     Route::get('about', 'PagesController@getAbout');
