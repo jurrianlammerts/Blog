@@ -26,6 +26,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('contact', 'PagesController@getContact');
     Route::get('/', 'PagesController@getIndex');
     Route::resource('users', 'UserController');
+    Route::get('logout', 'Auth\LoginController@logout');
     Route::resource('posts', 'PostController');
     Route::get('/home', 'Homecontroller@index');
 });
